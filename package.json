@@ -1,0 +1,19 @@
+{
+	"name": "custom-codes",
+	"version": "1.0.0",
+	"author": "Nguyen Tien Hau",
+	"license": "ISC",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"database:init": "sequelize db:drop && sequelize db:create && sequelize db:migrate && sequelize db:seed:all",
+		"database:update": "sequelize db:migrate && sequelize db:seed:all"
+	},
+	"dependencies": {
+		"mysql2": "^3.11.3",
+		"sequelize": "^6.37.5"
+	},
+	"devDependencies": {
+		"sequelize-cli": "^6.6.2"
+	}
+}
