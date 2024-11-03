@@ -9,7 +9,6 @@ const columns = attributeNames.reduce(function (accumulator, attributeName) {
 	return accumulator;
 }, {});
 
-/** @type {import('sequelize-cli').Migration} */
 module.exports = {
 	async up(queryInterface, _Sequelize) {
 		await queryInterface.createTable(name, columns);

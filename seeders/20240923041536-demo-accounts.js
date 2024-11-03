@@ -13,7 +13,6 @@ const demoAccounts = roles.map(function (role) {
 	return { ...row, username: role, password: role, full_name: role, role: role };
 });
 
-/** @type {import('sequelize-cli').Migration} */
 module.exports = {
 	async up(queryInterface, _Sequelize) {
 		await queryInterface.bulkInsert(name, demoAccounts, {});
